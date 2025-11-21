@@ -2,7 +2,7 @@
   "name": "ponto eletronico",
   "short_name": "",
   "description": "",
-  "start_url": "/ponto-eletronico",
+  "start_url": "/ponto-eletronico/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#369eff",
@@ -79,6 +79,6 @@
     }
   ],
   "orientation": "portrait",
-  "scope": "/",
+  "scope": "/ponto-eletronico/",
   "lang": "pt-BR"
 }
