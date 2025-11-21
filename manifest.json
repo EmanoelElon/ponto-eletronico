@@ -1,1 +1,24 @@
-{"theme_color":"#ffffff","background_color":"#369eff","icons":[{"purpose":"maskable","sizes":"512x512","src":"icon512_maskable.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"icon512_rounded.png","type":"image/png"}],"orientation":"portrait","display":"standalone","dir":"auto","lang":"pt-PT","name":"ponto eletronico","start_url":"/ponto-eletronico","scope":"/ponto-eletronico"}
+{
+    "theme_color":"#ffffff",
+    "background_color":"#369eff",
+    "icons":[
+        {
+            "purpose":"maskable",
+            "sizes":"512x512",
+            "src":"icon512_maskable.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"512x512",
+            "src":"icon512_rounded.png",
+            "type":"image/png"
+        }
+    ],
+    "orientation":"portrait",
+    "display":"standalone",
+    "dir":"auto","lang":"pt-PT",
+    "name":"ponto eletronico",
+    "start_url":"/ponto-eletronico/",
+    "scope":"/ponto-eletronico/"
+}
