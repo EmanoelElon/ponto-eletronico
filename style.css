@@ -6,17 +6,20 @@
 }
 
 .container{
+    width: auto;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .menu{
-    width: 5rem;
-    height: 100vh;
+    width: 100vw;
+    height: 5rem;
 
     padding: 5px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
 
@@ -26,9 +29,14 @@
     /* border: 1px solid red; */
 }
 
+.img-perfil{
+    width: auto;
+    height: 100%;
+}
+
 .bar{
-    width: 75%;
-    height: 5px;
+    width: 5px;
+    height: 75%;
     background-color: #fff;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -39,17 +47,20 @@
 
 nav{
 
+    width: 100%;
+    height: 100%;
     /* border: 1px solid black; */
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     gap: 2.5px;
 }
 
 a.nav-link{
-    width: 90%;
-    height: auto;
+    width: auto;
+    height: 90%;
     margin: 0%;
     padding: 0%;
 
@@ -57,17 +68,19 @@ a.nav-link{
 }
 
 .nav-icon{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 
     /* border: 1px solid black; */
 }
 
 .content{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
+    /* align-items: center; */
     justify-content: center;
+
 }
 
 .content > div{
