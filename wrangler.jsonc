@@ -1,5 +1,5 @@
 {
-    "name": "worker-name",
-    "compatibility_date": "2025-11-25",
-    "main": "src/index.ts"
+    "name": "ponto-eletronico",
+    "compatibility_date": "2025-11-27",
+    "main": "index.php"
 }
