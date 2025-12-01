@@ -2,7 +2,7 @@
 return [
     'database' => [
         'driver' => 'sqlite',
-        'database' => 'database.db'
+        'database' => 'database.sqlite',
     ],
 ];
 ?>
