@@ -8,9 +8,9 @@
         </div>
     </div>
 
-    <form action="" method="post">
+    <!-- <form action="" method="post">
         <input type="text" name="timer" id="timer">
-    </form>
+    </form> -->
 </div>
 
 <script>
