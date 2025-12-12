@@ -2,7 +2,7 @@
 
 $controller = str_replace('/','',parse_url($_SERVER['REQUEST_URI'])['path']);
 
-dd(dd(parse_url($_SERVER['REQUEST_URI'])['path']));
+dd(parse_url($_SERVER['REQUEST_URI'])['path']);
 
 // if(!$controller)$controller = './index';
 
