@@ -1,9 +1,9 @@
 <?php
-// require './models/Perfil.php';
+require './models/User.php';
 // require './models/Leiloeiro.php';
 
 session_start();
-// $config = require('config.php');
+$config = require('config.php');
 
 // require 'models/Leilao.php';
 

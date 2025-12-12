@@ -8,9 +8,9 @@
         </div>
     </div>
 
-    <!-- <form action="" method="post">
+    <form action="" method="post">
         <input type="text" name="timer" id="timer">
-    </form> -->
+    </form>
 </div>
 
 <script>
@@ -20,11 +20,11 @@
         let minutos = agora.getMinutes().toString().padStart(2, '0');
         let segundos = agora.getSeconds().toString().padStart(2, '0');
 
-        document.getElementById('timer').textContent =
-            `${horas}:${minutos}:${segundos}`;
+        // document.getElementById('timer').textContent =
+        //     `${horas}:${minutos}:${segundos}`;
 
-            // document.getElementById('timer').value =
-            // `${horas}:${minutos}:${segundos}`;
+            document.getElementById('timer').value =
+            `${horas}:${minutos}:${segundos}`;
     }
 
     // Atualiza a cada 1 segundo
