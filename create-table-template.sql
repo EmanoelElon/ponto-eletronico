@@ -17,4 +17,4 @@ CREATE TABLE tb_point(
     ano INTEGER NOT NULL,
     hora TIME NOT NULL DEFAULT CURRENT_TIME,
     FOREIGN KEY(id_user) REFERENCES tb_user(id)
-)
+);
