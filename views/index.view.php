@@ -1,16 +1,11 @@
 <div class="content">
-    <div>
-        <div id="timer"></div>
-        <p>data de hoje</p>
-        <div class="circle">
-            <img src="https://img.icons8.com/?size=100&id=100036&format=png&color=ffffff" alt="">
-            <span>REGISTRAR PONTO</span>
+    <form action="" method="post">
+        <div class="hourDate">
+            <input class="hour" type="text" name="timer" id="timer" readonly>
+            <label class="" id="currentDate"></label>
         </div>
-    </div>
-
-    <!-- <form action="" method="post">
-        <input type="text" name="timer" id="timer">
-    </form> -->
+        <input class="circle" type="submit" value="REGISTRAR PONTO">
+    </form>
 </div>
 
 <script>
@@ -23,8 +18,18 @@
         document.getElementById('timer').textContent =
             `${horas}:${minutos}:${segundos}`;
 
-            // document.getElementById('timer').value =
-            // `${horas}:${minutos}:${segundos}`;
+        document.getElementById('timer').value = `${horas}:${minutos}:${segundos}`;
+    }
+
+    function currentDate() {
+        months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+        days = ["domingo", "segunda-Feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sabado"];
+
+
+        const today = new Date();
+
+        document.getElementById('currentDate').textContent =
+            `${days[today.getDay()]}, ${today.getDate()} de ${months[today.getMonth()]}`;
     }
 
     // Atualiza a cada 1 segundo
@@ -32,4 +37,5 @@
 
     // Atualiza imediatamente ao carregar
     atualizarRelogio();
+    currentDate();
 </script>
