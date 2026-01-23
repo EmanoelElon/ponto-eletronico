@@ -2,9 +2,17 @@
 
 if ($_SERVER['REQUEST_METHOD'] !=  'POST') {
     // header('location: /novoleilao');
-    view('/login');
+    view('/index');
+    // header('location: index');
     exit();
 }
+
+if (!auth()) {
+
+    header('location: login');
+    exit();
+}
+
 $id_user = 1; // temporario
 $dia = date('d');
 $mes = date('m');
@@ -23,7 +31,6 @@ $dbInstance->query(
         'mes' => $mes,
         'ano' => $ano,
         'hora' => $hora,
-        'data_criacao' => $data_criacao,
     ]
     // compact('matricula', 'nome', 'email', 'emailSecundario', 'usuario', 'senha', 'logradouro', 'numero', 'complemento', 'cep', 'bairro', 'cidade', 'uf', 'telefone', 'telefoneSecundario', 'pagina', 'esta_ativo', 'regular')
 );
