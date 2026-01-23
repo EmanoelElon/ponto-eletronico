@@ -1,8 +1,10 @@
 <div class="h-full flex flex-col items-center justify-center">
-    <div class="w-full px-10 py-5 flex flex-row justify-end gap-5">
-        <a class="bg-[#359EFF] px-5 py-2 text-white rounded-md" href="/login">Log In</a>
-        <a class="bg-[#359EFF] px-5 py-2 text-white rounded-md" href="/register">Register</a>
-    </div>
+    <?php if (!auth()) { ?>
+        <div class="w-full px-10 py-5 flex flex-row justify-center gap-5 md:justify-end">
+            <a class="bg-[#359EFF] px-5 py-2 text-white rounded-md" href="/login">Log In</a>
+            <a class="bg-[#359EFF] px-5 py-2 text-white rounded-md" href="/register">Register</a>
+        </div>
+    <?php } ?>
     <form class="h-full" action="" method="post">
         <div class="hourDate">
             <input class="hour" type="text" name="timer" id="timer" readonly>

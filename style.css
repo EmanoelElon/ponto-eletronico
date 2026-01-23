@@ -106,7 +106,7 @@ a.nav-link{
 form{
     width: 100%;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     gap: 2.25em;

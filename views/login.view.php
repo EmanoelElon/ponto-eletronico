@@ -1,4 +1,4 @@
-<div class="content">
+<div class="h-full flex flex-col items-center justify-center">
     <form action="">
         <h1>Log In</h1>
         <div>
