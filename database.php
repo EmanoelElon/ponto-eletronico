@@ -11,9 +11,12 @@ class DB
         // $connectionString = $config['driver'] . ':' . $config['database'];
 
 
-        $dsn = $config['driver'] . ':host=' . $config['host'] . ':' . $config['port'] . ';dbname=' . $config['dbname'] . ';' . $config['charset'];
-        $username = $config['user'];
-        $password = $config['password'];
+        // $dsn = $config['driver'] . ':host=' . $config['host'] . ':' . $config['port'] . ';dbname=' . $config['dbname'] . ';' . $config['charset'];
+
+        $dsn = $config['driver'] . ':' . $config['database'];
+
+        // $username = $config['user'];
+        // $password = $config['password'];
 
         // $dsn = 'mysql:host=10.243.133.201:3330;dbname=db_tradutores;charset=utf8';
         // $username = 'tradutores';
@@ -37,7 +40,8 @@ class DB
 
         // phpinfo();
         // $this->db = new pdo($connectionString);
-        $this->db = new PDO($dsn, $username, $password);
+        // $this->db = new PDO($dsn, $username, $password);
+        $this->db = new PDO($dsn);
     }
 
     public function query($query, $class = null, $params = [])
