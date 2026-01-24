@@ -1,8 +1,14 @@
-<div class="content">
-    <form action="" method="post">
+<div class="h-full flex flex-col items-center justify-center">
+    <?php if (!auth()) { ?>
+        <div class="w-full px-10 py-5 flex flex-row justify-center gap-5 md:justify-end">
+            <a class="bg-[#359EFF] px-5 py-2 text-white rounded-md" href="/login">Log In</a>
+            <a class="bg-[#359EFF] px-5 py-2 text-white rounded-md" href="/register">Register</a>
+        </div>
+    <?php } ?>
+    <form class="h-full" action="/index" method="POST">
         <div class="hourDate">
             <input class="hour" type="text" name="timer" id="timer" readonly>
-            <label class="" id="currentDate"></label>
+            <label class="text-center" id="currentDate"></label>
         </div>
         <input class="circle" type="submit" value="REGISTRAR PONTO">
     </form>

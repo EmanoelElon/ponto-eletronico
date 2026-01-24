@@ -1,9 +1,12 @@
 <?php 
     class User {
         public $id;
-        public $usuario;
+        public $username;
         public $name;
-        public $funcao;
-        public $isActive;   
+        public $isAdmin;
+        public $isComumUser;
+        // public $funcao;
+        public $isActive;
+        public $register_date;   
     }
 ?>
