@@ -5,7 +5,7 @@
             <a class="bg-[#359EFF] px-5 py-2 text-white rounded-md" href="/register">Register</a>
         </div>
     <?php } ?>
-    <form class="h-full" action="" method="post">
+    <form class="h-full" action="/index" method="POST">
         <div class="hourDate">
             <input class="hour" type="text" name="timer" id="timer" readonly>
             <label class="text-center" id="currentDate"></label>
