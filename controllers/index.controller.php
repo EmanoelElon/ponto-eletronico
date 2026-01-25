@@ -1,7 +1,7 @@
 <?php
 if (!auth()) {
 
-    header('location: login');
+    header('location: index');
     exit();
 }
 
@@ -11,7 +11,7 @@ if (!auth()) {
 //     exit();
 // }
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // view('/index');
     // header('location: index');
 
