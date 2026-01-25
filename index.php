@@ -1,5 +1,4 @@
 <?php
-dd();
 require './models/User.php';
 require './models/Point.php';
 
@@ -13,4 +12,5 @@ require 'functions.php';
 require 'database.php';
 require 'routes.php';
 
+dd();
 ?>
