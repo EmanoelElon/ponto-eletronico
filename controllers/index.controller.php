@@ -1,9 +1,9 @@
 <?php
-if (!auth()) {
+//if (!auth()) {
 
-    header('location: index');
-    exit();
-}
+//    header('location: index');
+//    exit();
+//}
 
 // if($_GET['submit'] === false){
 //     // var_dump($_POST);
