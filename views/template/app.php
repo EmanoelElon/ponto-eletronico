@@ -26,7 +26,7 @@
             </div>
             <div class="bar"></div> -->
             <nav>
-                <a class="nav-link" href="<?php echo BASE_URL; ?>index" rel="noopener noreferrer"><img class="nav-icon"
+                <a class="nav-link" href="index" rel="noopener noreferrer"><img class="nav-icon"
                         src="https://img.icons8.com/?size=100&id=82767&format=png&color=ffffff" alt=""></a>
                 <a class="nav-link" href="/history" rel="noopener noreferrer"><img class="nav-icon"
                         src="https://img.icons8.com/?size=100&id=86125&format=png&color=ffffff" alt=""></a>

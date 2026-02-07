@@ -3,7 +3,6 @@ require './models/User.php';
 require './models/Point.php';
 
 session_start();
-define('BASE_URL', '/ponto/');
 $config = require('config.php');
 
 // require 'models/Leilao.php';
