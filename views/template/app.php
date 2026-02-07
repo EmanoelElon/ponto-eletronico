@@ -16,7 +16,7 @@
 <body class="h-screen">
     <div class="h-full w-full flex flex-col">
 
-        <?php require "../views/{$view}.view.php" ?>
+        <?php require __DIR__ . "/../{$view}.view.php" ?>
 
         <div class="menu">
             <!-- <div class="img-perfil">
