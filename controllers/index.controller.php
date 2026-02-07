@@ -1,7 +1,7 @@
 <?php
 if (!auth()) {
 
-    header('location: index');
+    header('location: login');
     exit();
 }
 

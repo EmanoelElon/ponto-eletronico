@@ -12,5 +12,5 @@ require 'functions.php';
 require 'database.php';
 require 'routes.php';
 
-// dd($_SERVER);
+//dd();
 ?>
