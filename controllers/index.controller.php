@@ -1,10 +1,4 @@
 <?php
-// if (!auth()) {
-
-//     header('location: login');
-//     exit();
-// }
-
 // if($_GET['submit'] === false){
 //     // var_dump($_POST);
 //     view('/index');
@@ -12,6 +6,12 @@
 // }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!auth()) {
+
+        header('location: login');
+        exit();
+    }
+    
     // view('/index');
     // header('location: index');
 
